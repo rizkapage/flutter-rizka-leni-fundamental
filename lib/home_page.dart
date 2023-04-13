@@ -37,8 +37,8 @@ class _HomePageState extends State<HomePage> {
             ),
             TextField(
               controller: secondController,
-              decoration: InputDecoration(
-                  border: const OutlineInputBorder(),
+              decoration: const InputDecoration(
+                  border: OutlineInputBorder(),
                   hintText: 'Enter second number'),
               keyboardType: TextInputType.number,
             ),
