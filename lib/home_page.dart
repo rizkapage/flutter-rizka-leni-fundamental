@@ -50,25 +50,45 @@ class _HomePageState extends State<HomePage> {
               children: [
                 ElevatedButton(
                   onPressed: () {
-                    //code here
+                    double a = double.parse(firstController.text);
+                    double b = double.parse(secondController.text);
+
+                    setState(() {
+                      result = a + b;
+                    });
                   },
                   child: const Text('Add'),
                 ),
                 ElevatedButton(
                   onPressed: () {
-                    //code here
+                    double a = double.parse(firstController.text);
+                    double b = double.parse(secondController.text);
+
+                    setState(() {
+                      result = a - b;
+                    });
                   },
                   child: const Text('Substract'),
                 ),
                 ElevatedButton(
                   onPressed: () {
-                    //code here
+                    double a = double.parse(firstController.text);
+                    double b = double.parse(secondController.text);
+
+                    setState(() {
+                      result = a * b;
+                    });
                   },
                   child: const Text('Multiply'),
                 ),
                 ElevatedButton(
                   onPressed: () {
-                    //code here
+                    double a = double.parse(firstController.text);
+                    double b = double.parse(secondController.text);
+
+                    setState(() {
+                      result = a / b;
+                    });
                   },
                   child: const Text('Divide'),
                 )
